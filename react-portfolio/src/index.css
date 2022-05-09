@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color4);
+  background-color: var(--color5);
 }
 
 code {
@@ -13,10 +13,29 @@ code {
 }
 
 :root {
-  --color1: #35A7FF;
-  --color2: #38618C;
+  --color1: #5E7CE2;
+  --color2: #f4f5ff;
+  --color3: #CFDEE7;
+  --color4: #92B4F4;
+  --color5: #3A3B3c;    
 }
 
+/* header */
+
 header {
-  background-color: var(--color1);
+  background-image: url("./assets/background/background.jpg");
+}
+
+/* nav */
+
+li {
+  list-style: none;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+.navActive {
+  color: var(--color3);
 }
