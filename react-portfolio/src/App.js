@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from './components/Header';
 import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const categories = ['about', 'portfolio', 'contact', 'resume'];
@@ -16,7 +17,7 @@ function App() {
         {currentCategory==='about' && 
         <About></About>}
         {currentCategory==='portfolio' && 
-        <p>test2</p>}
+        <Portfolio></Portfolio>}
       </main>
     </div>
   );

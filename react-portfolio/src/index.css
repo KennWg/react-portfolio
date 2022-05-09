@@ -45,3 +45,46 @@ nav  li {
 .navActive {
   color: var(--color3);
 }
+
+/* portfolio */
+
+.project-container a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.projectcard {
+  background-size: cover;
+  height: 200px;
+}
+
+.projectbox {
+  z-index: 2;
+  background-color: var(--color1);
+}
+
+.project1 {
+  background-image: url("./assets/cards/card1.png");
+}
+
+.project2 {
+  background-image: url("./assets//cards/card2.png");
+}
+
+.project3 {
+  background-image: url("./assets//cards/card3.jpg");
+}
+
+.project4 {
+  background-image: url("./assets//cards/card4.jpg");
+  background-position: center;
+}
+
+.project5 {
+  background-image: url("./assets//cards/card5.jpg");
+}
+
+.project6 {
+  background-image: url("./assets//cards/card6.jpg");
+  background-position: center;
+}
