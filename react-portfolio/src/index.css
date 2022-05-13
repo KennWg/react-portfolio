@@ -72,20 +72,20 @@ nav  li {
 }
 
 .project3 {
-  background-image: url("./assets//cards/card3.jpg");
+  background-image: url("./assets//cards/card3.png");
 }
 
 .project4 {
-  background-image: url("./assets//cards/card4.jpg");
+  background-image: url("./assets//cards/card4.png");
   background-position: center;
 }
 
 .project5 {
-  background-image: url("./assets//cards/card5.jpg");
+  background-image: url("./assets//cards/card5.png");
 }
 
 .project6 {
-  background-image: url("./assets//cards/card6.jpg");
+  background-image: url("./assets//cards/card6.png");
   background-position: center;
 }
 
@@ -114,6 +114,13 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+/* resume */
+
+.resume a {
+  text-decoration: none;
+  color: var(--color4);
 }
 
 /* footer */
