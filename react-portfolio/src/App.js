@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from './components/Header';
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   const categories = ['about', 'portfolio', 'contact', 'resume'];
@@ -19,6 +20,7 @@ function App() {
         {currentCategory==='portfolio' && 
         <Portfolio></Portfolio>}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
