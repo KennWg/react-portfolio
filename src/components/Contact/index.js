@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -6,9 +6,12 @@ function ContactForm() {
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
+    const nameEl = useRef(0);
+    const emailEl = useRef(0);
+    const messageEl = useRef(0);
+
 
     function handleChange(e) {
-
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
@@ -31,7 +34,10 @@ function ContactForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
+        nameEl.current.value = '';
+        emailEl.current.value = '';
+        messageEl.current.value = '';
+        setFormState({ name: '', email: '', message: '' })
     };
 
     return (
@@ -40,15 +46,15 @@ function ContactForm() {
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className='py-2 px-2 d-flex row'>
                     <label htmlFor="name" className='px-2 col-3'>Name:</label>
-                    <input type="text" className="col-9" defaultValue={name} onBlur={handleChange} name="name" />
+                    <input type="text" className="col-9" defaultValue={name} onBlur={handleChange} name="name" ref={nameEl}/>
                 </div>
                 <div className='py-2 px-2 d-flex row'>
                     <label htmlFor="email" className='px-2 col-3'>Email:</label>
-                    <input type="email" className="col-9" defaultValue={email} onBlur={handleChange} name="email" />
+                    <input type="email" className="col-9" defaultValue={email} onBlur={handleChange} name="email" ref={emailEl}/>
                 </div>
                 <div className='py-2 px-2 d-flex row'>
                     <label htmlFor="message" className='px-2 col-3'>Message:</label>
-                    <textarea name="message" className="col-9" defaultValue={message} onBlur={handleChange} rows="5" />
+                    <textarea name="message" className="col-9" defaultValue={message} onBlur={handleChange} rows="5" ref={messageEl}/>
                 </div>
                 {errorMessage && (
                     <div>

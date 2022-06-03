@@ -29,16 +29,16 @@ function Portfolio() {
                 <a href="https://github.com/KennWg/run-buddy" target="_blank" rel="noreferrer noopener" className="mx-3 mt-2">Click here for Github repo!</a>
             </div>
             <div className="d-flex flex-wrap mx-5 py-4 flex-row project-container">
-                <a href="https://whispering-brook-73444.herokuapp.com/" target="_blank" rel="noreferrer noopener" className="projectcard project3 w-75">
+                <a href="https://aqueous-tor-23936.herokuapp.com/" target="_blank" rel="noreferrer noopener" className="projectcard project3 w-75">
                     <article>
                         <div className="projectbox w-25">
-                            <h3>Note Taker</h3>
-                            <h4>Express.js</h4>
+                            <h3>Pet Alert</h3>
+                            <h4>MERN Stack</h4>
                         </div>
                     </article>
                 </a>
-                <p className="w-25 px-3">This project used Express.js to take notes and save them for future reference.  It used Express.js to create API routes to create, read and delete notes.</p>
-                <a href="https://github.com/KennWg/note-taker" target="_blank" rel="noreferrer noopener" className="mx-3 mt-2">Click here for Github repo!</a>
+                <p className="w-25 px-3">This project used the MERN stack to build a site where somebody could post reports for lost pets.  It also used Cloudinary to upload pictures of pets for the reports.</p>
+                <a href="https://github.com/KennWg/pet-finder" target="_blank" rel="noreferrer noopener" className="mx-3 mt-2">Click here for Github repo!</a>
             </div>
             <div className="d-flex flex-wrap mx-5 py-4 flex-row project-container">
                 <a href="https://fathomless-headland-58560.herokuapp.com" target="_blank" rel="noreferrer noopener" className="projectcard project4 w-75">
