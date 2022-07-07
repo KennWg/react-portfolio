@@ -53,16 +53,16 @@ function Portfolio() {
                 <a href="https://github.com/KennWg/budget-tracker" target="_blank" rel="noreferrer noopener" className="mx-3 mt-2">Click here for Github repo!</a>
             </div>
             <div className="d-flex flex-wrap mx-5 py-4 flex-row project-container">
-                <a href="https://watch.screencastify.com/v/9aIhkYNdYq6I50G9hyJv" target="_blank" rel="noreferrer noopener" className="projectcard project5 w-75">
+                <a href="https://kennwg.github.io/sorting-app/" target="_blank" rel="noreferrer noopener" className="projectcard project5 w-75">
                     <article>
                         <div className="projectbox w-25">
-                            <h3>Social Media Backend</h3>
-                            <h4>MongoDB</h4>
+                            <h3>Sorting Visualizer</h3>
+                            <h4>React, Javascript</h4>
                         </div>
                     </article>
                 </a>
-                <p className="w-25 px-3">Here I was able to set up a mock social media backend using Mongoose  I didn't make a front end for this project, so I have a video demonstrating the API routes I did instead.  It allows for users to post thoughts and add friends.</p>
-                <a href="https://github.com/KennWg/social-media-backend" target="_blank" rel="noreferrer noopener" className="mx-3 mt-2">Click here for Github repo!</a>
+                <p className="w-25 px-3">I made a sorting visualizer using React and Javascript where you can see how 3 popular sorting algorithms work visually - there are buttons for merge sort, heap sort and quick sort.  Bubble sort is also available as a comparison. </p>
+                <a href="https://github.com/KennWg/sorting-app" target="_blank" rel="noreferrer noopener" className="mx-3 mt-2">Click here for Github repo!</a>
             </div>
             <div className="d-flex flex-wrap mx-5 py-4 flex-row project-container">
                 <a href="https://glacial-lake-35403.herokuapp.com/" target="_blank" rel="noreferrer noopener" className="projectcard project6 w-75">
